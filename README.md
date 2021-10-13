@@ -76,5 +76,5 @@ Use xdot to view the post_techmap.dot file.
 ```console
 xdot post_techmap.dot
 ```
-The synthesised verilog code can be found in this path: `designs/<design_name>/runs/<run_name>/results/synthesis/<name>.synthesis.v`.
+The synthesized verilog code can be found in this path: `designs/<design_name>/runs/<run_name>/results/synthesis/<name>.synthesis.v`.
 This file also shows the standard cells mapped to the design.
