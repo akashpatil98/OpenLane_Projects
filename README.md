@@ -64,3 +64,15 @@ The next step is to run the OpenLane flow on the new design by running the follo
 ```console
 ./flow.tcl -design <design_name>
 ```
+
+**5. Edit the config.tcl file if required.**
+
+This step is needed only if the flow exits with errors. One such example is inverter. If the verilog code is only for an inverter, the generic config.tcl will result in errors. Please check the existing examples to understand how to edit the config.tcl based on project requirements.
+
+**6. Looking at the standard cells used for the design.**
+
+The standard cells used for the design can be viewed by navigating to `designs/<design_name>/runs/<run_name>/tmp/synthesis`.
+Use xdot to view the post_techmap.dot file.
+```console
+xdot post_techmap.dot
+```
